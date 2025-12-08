@@ -60,4 +60,14 @@ stdenv.mkDerivation (finalAttrs: {
   ++ lib.optionals withJack [
     jack2
   ];
+
+  meta = with lib; {
+    description = "Ratatouille is a Neural Model loader and mixer for Linux/Windows";
+    homepage = "https://github.com/brummer10/Ratatouille.lv2";
+    license = licenses.bsd3;
+    maintainers = with maintainers; [ bryanhonof ];
+    sourceProvenance = with sourceTypes; [ fromSource ];
+    platforms = platforms.linux;
+    mainProgram = "Ratatouille";
+  };
 })
