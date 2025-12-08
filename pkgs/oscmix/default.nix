@@ -46,6 +46,13 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-  meta = {
+  meta = with lib; {
+    description = "Mixer for RME Fireface UCX II";
+    homepage = "https://github.com/michaelforney/oscmix";
+    license = licenses.free;
+    maintainers = with maintainers; [ bryanhonof ];
+    sourceProvenance = with sourceTypes; [ fromSource ];
+    platforms = platforms.linux;
+    mainProgram = "oscmix";
   };
 })
