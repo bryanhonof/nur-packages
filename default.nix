@@ -15,5 +15,6 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   ratatouille = pkgs.callPackage ./pkgs/ratatouille { };
+  stomptuner = pkgs.callPackage ./pkgs/stomptuner { };
   oscmix = pkgs.callPackage ./pkgs/oscmix { };
 }
