@@ -17,4 +17,6 @@
   ratatouille = pkgs.callPackage ./pkgs/ratatouille { };
   stomptuner = pkgs.callPackage ./pkgs/stomptuner { };
   oscmix = pkgs.callPackage ./pkgs/oscmix { };
+
+  matryoshka = pkgs.callPackage ./pkgs/matryoshka { };
 }
