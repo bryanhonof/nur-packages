@@ -14,6 +14,8 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  ccache-storage-http-go = pkgs.callPackage ./pkgs/ccache-storage-http-go { };
+
   # Audio plugins/tools
   ratatouille = pkgs.callPackage ./pkgs/ratatouille { };
   stomptuner = pkgs.callPackage ./pkgs/stomptuner { };
