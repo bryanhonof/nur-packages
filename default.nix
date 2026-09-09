@@ -18,8 +18,4 @@
   ratatouille = pkgs.callPackage ./pkgs/ratatouille { };
   stomptuner = pkgs.callPackage ./pkgs/stomptuner { };
   oscmix = pkgs.callPackage ./pkgs/oscmix { };
-
-  # LLM tools
-  matryoshka = pkgs.callPackage ./pkgs/matryoshka { };
-  popup-mcp = pkgs.callPackage ./pkgs/popup-mcp { };
 }
