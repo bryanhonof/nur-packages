@@ -65,7 +65,7 @@ buildNpmPackage (finalAttrs: {
     changelog = "https://github.com/likec4/likec4/releases/tag/v${finalAttrs.version}";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ bryanhonof ];
-    platforms = lib.platforms.linux;
+    platforms = lib.platforms.unix;
     mainProgram = "likec4";
   };
 })
